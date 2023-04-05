@@ -49,7 +49,16 @@ def transcribe_large_audio(path):
     # Open audio file with pydub
     sound = AudioSegment.from_wav(path)
     # Split audio where silence is 700ms or greater and get chunks
-    chunks = split_on_silence(sound, min_silence_len=700, silence_thresh=sound.dBFS-14, keep_silence=700)
+    chunks = split_on_silence(sound,
+
+    # split on silences longer than 1000ms (1 sec)
+    min_silence_len=1000,
+
+    # anything under -16 dBFS is considered silence
+    silence_thresh=-16, 
+
+    # keep 200 ms of leading/trailing silence
+    keep_silence=200)
     
     # Create folder to store audio chunks
     folder_name = "audio-chunks"
