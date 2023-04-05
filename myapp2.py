@@ -1,13 +1,14 @@
 import streamlit as st
 from streamlit_option_menu import option_menu
 import speech_recognition as sr
-import numpy as np
+#import numpy as np
 import os
 from pydub import AudioSegment
 from pydub.silence import split_on_silence
-from transformers import pipeline, AutoModelForTokenClassification, AutoTokenizer, AutoModelForSequenceClassification, AutoModelForSeq2SeqLM
-import pandas as pd
+from transformers import pipeline, AutoTokenizer, AutoModelForSequenceClassification
+#import pandas as pd
 from PIL import Image
+
 
 col1, col2, col3 = st.columns(3)
 
@@ -48,7 +49,7 @@ def transcribe_large_audio(path):
     # Open audio file with pydub
     sound = AudioSegment.from_wav(path)
     # Split audio where silence is 700ms or greater and get chunks
-    chunks = split_on_silence(sound, min_silence_len=500, silence_thresh=-16,keep_silence=500)
+    chunks = split_on_silence(sound, min_silence_len=500, silence_thresh=-16, keep_silence=500 )
     
     # Create folder to store audio chunks
     folder_name = "audio-chunks"
@@ -145,8 +146,13 @@ if selected == "Anasayfa":
     **'Cinsiyetçi Söylem İçerir'**,**'Küfür ve Kötü Söz İçerir'** veya **'Temiz İçerik'** olacak şekilde 
     tespit edilerek tarafınıza sunulmaktadır.""")
 
-    st.markdown("""Bir **video dosyasının içeriğini kontrol etmek isterseniz** 'Video İçeriğini Analiz Et'; **ses dosyasının içeriğini kontrol etmek istemeniz** dahilinde ise 'Ses İçeriğini Analiz Et' 
-    kısımlarına tıklamanız yeterli olacaktır. """)
+    st.markdown("""Bir **video dosyasının içeriğini kontrol etmek isterseniz**""") 
+    image=Image.open('video.png')
+    st.image(image)
+    st.markdown("""**ses dosyasının içeriğini kontrol etmek istemeniz** dahilinde ise """) 
+    image=Image.open('ses.png')
+    st.image(image)
+    st.markdown("""kısımlarına tıklamanız yeterli olacaktır. """) 
 
 if selected == "Video İçeriğini Analiz Et":
     #st.markdown(f"**You selected {selected}**")
