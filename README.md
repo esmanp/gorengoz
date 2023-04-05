@@ -39,8 +39,9 @@ Oluşturulan veri modelini MIT lisansı ile uluslararası doğal dil platformu o
 ![Model](https://github.com/esmanp/gorengoz/blob/main/huggingfacemodel.png?raw=true)
 
 
-### Demo
-Site: [![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://gorengoz.streamlit.app)
+### Site 
+Demo:
+[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://gorengoz.streamlit.app)
   
 
 ##### Bu web uygulamasını kendi bilgisayarınızda yeniden oluşturmak için aşağıdaki adımları takip edebilirsiniz: 
