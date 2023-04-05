@@ -43,6 +43,7 @@ selected = option_menu(None, ["Anasayfa","Video İçeriğini Analiz Et","Ses İ�
     
     )
 
+
 r = sr.Recognizer()
 def transcribe_large_audio(path):
     """Split audio into chunks and apply speech recognition"""
@@ -77,6 +78,8 @@ def transcribe_large_audio(path):
     # Return text for all chunks
     return whole_text
 
+
+
 def predict(text):
     tokenizer= AutoTokenizer.from_pretrained("ennp/bert-turkish-text-classification-cased")
     # build and load model, it take time depending on your internet connection
@@ -88,17 +91,7 @@ def predict(text):
     'LABEL_2': 'Cinsiyetçi Söylem İçerir',
     'LABEL_3': 'Küfür ve Kötü Söz İçerir ',
     'LABEL_4': 'Temiz İçerik ' }
-    #code_to_label[model(text)[0]['label']]
-    if code_to_label[model(text)[0]['label']]== 'Haraket ve Aşağılama İçerir ':
-        st.error('Haraket ve Aşağılama İçerir')
-    if code_to_label[model(text)[0]['label']]== 'Irkçı Söylem İçerir':
-        st.warning('Irkçı Söylem İçerir')
-    if code_to_label[model(text)[0]['label']]== 'Cinsiyetçi Söylem İçerir':
-        st.warning('Cinsiyetçi Söylem İçerir')
-    if code_to_label[model(text)[0]['label']]== 'Küfür ve Kötü Söz İçerir':
-        st.error('Küfür ve Kötü Söz İçerir')
-    if code_to_label[model(text)[0]['label']]== 'Temiz İçerik':
-        st.info('Temiz İçerik')
+    code_to_label[model(text)[0]['label']]
 
 def get_split(text):
     l_total= []
@@ -117,14 +110,14 @@ def get_split(text):
     return l_total
 
 import ffmpeg
-def get_wav(video):
-    #com1 = f"ffmpeg -i {video} -vn speech.wav"
+def get_wav(video:str):
+	#com1 = f"ffmpeg -i {video} -vn speech.wav"
 	#com2 = "ffmpeg -i speech.mp3 speech.wav"
 	#os.system(com1)
     file_var=AudioSegment.from_file(video,format="mp4")
     file_var.export("speech.wav",format='wav')
 	#os.system(com2)
-    
+	
 if selected == "Anasayfa":
     #st.write(f"**You selected {selected}**")
     st.markdown("""İnternet Üzerinden TV (OTT), 
