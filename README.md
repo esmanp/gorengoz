@@ -44,9 +44,7 @@ Demo:
 [![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://gorengoz.streamlit.app)
   
 
-##### Bu web uygulamasını kendi bilgisayarınızda yeniden oluşturmak için aşağıdaki adımları takip edebilirsiniz: 
-
-
+## Bu web uygulamasını kendi bilgisayarınızda yeniden oluşturmak için aşağıdaki adımları takip edebilirsiniz: 
 
 ```bash
   wget https://github.com/esmanp/gorengoz/blob/main/requirements.txt
@@ -69,7 +67,7 @@ pip install -r requirements.txt
  streamlit run app2.py
 ```
 
-  
+Bu proje TEKNOFEST 2023 Türkçe Doğal Dil İşleme Yarışması'na katılmak amacıyla Görengöz ekibi tarafından geliştirilmiştir. #Acikhack2023
     
 
 
