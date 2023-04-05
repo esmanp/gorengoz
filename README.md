@@ -24,7 +24,7 @@ Bu projenin ne yaptığı ve kimin için olduğu hakkında kısa bir açıklama
   
 ## Demo
 
-Demoya gif veya bağlantı ekleyin
+[Demoya gif veya bağlantı ekleyin](https://gorengoz.streamlit.app)
 
   
 ## Bilgisayarınızda Çalıştırın
