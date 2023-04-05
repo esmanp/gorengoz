@@ -41,7 +41,7 @@ Oluşturulan veri modelini MIT lisansı ile uluslararası doğal dil platformu o
 
 ### Site 
 Demo:
-[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://gorengoz.streamlit.app)
+[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://gorengozun.streamlit.app)
   
 
 ## Bu web uygulamasını kendi bilgisayarınızda yeniden oluşturmak için aşağıdaki adımları takip edebilirsiniz: 
