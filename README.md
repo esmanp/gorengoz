@@ -24,33 +24,32 @@ Bu projenin ne yaptığı ve kimin için olduğu hakkında kısa bir açıklama
   
 ## Demo
 
-[Demoya gif veya bağlantı ekleyin](https://gorengoz.streamlit.app)
+https://gorengoz.streamlit.app
 
   
 ## Bilgisayarınızda Çalıştırın
 
-Projeyi klonlayın
+
 
 ```bash
-  git clone https://link-to-project
+  wget https://raw.githubusercontent.com/dataprofessor/bioactivity-prediction-app/main/requirements.txt
+
 ```
 
-Proje dizinine gidin
-
 ```bash
-  cd my-project
+pip install -r requirements.txt
 ```
 
-Gerekli paketleri yükleyin
-
 ```bash
-  npm install
+  wget https://github.com/dataprofessor/bioactivity-prediction-app/archive/main.zip
 ```
 
-Sunucuyu çalıştırın
+```bash
+ unzip main.zip
+```
 
 ```bash
-  npm run start
+ streamlit run app.py
 ```
 
   
