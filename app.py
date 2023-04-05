@@ -49,7 +49,7 @@ def transcribe_large_audio(path):
     # Open audio file with pydub
     sound = AudioSegment.from_wav(path)
     # Split audio where silence is 700ms or greater and get chunks
-    chunks = split_on_silence(sound)
+    chunks = split_on_silence(sound, min_silence_len=700, silence_thresh=sound.dBFS-14, keep_silence=700)
     
     # Create folder to store audio chunks
     folder_name = "audio-chunks"
@@ -64,10 +64,10 @@ def transcribe_large_audio(path):
         audio_chunk.export(chunk_filename, format="wav")
         # Recognize chunk
         with sr.AudioFile(chunk_filename) as source:
-            audio_listened = r.record(source,min_silence_len=700, silence_thresh=-16, keep_silence=700)
+            audio_listened = r.record(source)
             # Convert to text
             try:
-                text = r.recognize_google(audio_listened,language="tr-tr")
+                text = r.recognize_google(audio_listened)
             except sr.UnknownValueError as e:
                 print("Error:", str(e))
             else:
@@ -76,8 +76,6 @@ def transcribe_large_audio(path):
                 whole_text += text
     # Return text for all chunks
     return whole_text
-
-
 
 def predict(text):
     tokenizer= AutoTokenizer.from_pretrained("ennp/bert-turkish-text-classification-cased")
