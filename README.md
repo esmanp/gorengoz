@@ -13,7 +13,7 @@ Bu projenin ne yaptığı ve kimin için olduğu hakkında kısa bir açıklama
 [![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://choosealicense.com/licenses/mit/)
 [![Python 3.7](https://img.shields.io/badge/python-3.7-blue.svg)](https://www.python.org/downloads/release/python-370/)
 [![Streamlit App](https://docs.streamlit.io/logo.svg)](https://docs.streamlit.io)
-[![Streamlit App]([https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVHQVWyQQTjgkWv8ElEc0NkHTPJCuj7lmvBBbZyI4&s](https://images.ctfassets.net/bguokct8bxgd/5IPCiyrFxtp4deulUtSyTc/a4230d130983aea6fdaad394a8eff37d/9.png)](https://huggingface.co)
+
   
 
 
