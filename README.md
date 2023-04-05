@@ -1,8 +1,8 @@
 
-
-                                    ![Logo](https://github.com/esmanp/gorengoz/blob/main/logo.png?raw=true)
-
-    
+ <p align="center">
+  < ![Logo](https://github.com/esmanp/gorengoz/blob/main/logo.png?raw=true)>
+</p>
+  
 # Gören Göz
 
 [![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://choosealicense.com/licenses/mit/)
