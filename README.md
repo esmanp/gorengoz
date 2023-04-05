@@ -19,7 +19,7 @@ Bu projenin ne yaptığı ve kimin için olduğu hakkında kısa bir açıklama
   
 ## Ekran Görüntüleri
 
-![https://github.com/esmanp/gorengoz/blob/main/Ekran%20g%C3%B6r%C3%BCnt%C3%BCs%C3%BC.png?raw=true)
+![https://github.com/esmanp/gorengoz/blob/main/Ekran%20g%C3%B6r%C3%BCnt%C3%BCs%C3%BC.png?raw=true]
 
   
 ## Demo
