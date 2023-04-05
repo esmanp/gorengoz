@@ -64,7 +64,7 @@ pip install -r requirements.txt
 ```
 
 ```bash
- streamlit run app2.py
+ streamlit run app.py
 ```
 
 Bu proje TEKNOFEST 2023 Türkçe Doğal Dil İşleme Yarışması'na katılmak amacıyla Görengöz ekibi tarafından geliştirilmiştir. #Acikhack2023
