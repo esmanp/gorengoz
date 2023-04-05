@@ -1,5 +1,5 @@
 
-  ![Logo](https://github.com/esmanp/gorengoz/blob/main/logo.png?raw=true)
+![Logo](https://github.com/esmanp/gorengoz/blob/main/logo.png?raw=true)
   
 # Gören Göz
 
