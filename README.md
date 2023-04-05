@@ -19,7 +19,7 @@ Bu projenin ne yaptığı ve kimin için olduğu hakkında kısa bir açıklama
   
 ## Ekran Görüntüleri
 
-![Uygulama Ekran Görüntüsü](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+![Uygulama Ekran Görüntüsü](file:///C:/Users/metu/Desktop/Ekran%20görüntüsü.png)
 
   
 ## Demo
