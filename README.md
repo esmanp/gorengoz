@@ -9,7 +9,7 @@
 
 Gören Göz, ses ve dijital medya ürünlerinin(radyo programları,videolar vs) içerikleri analiz ederek kullanıcılara sunan online bir Doğal Dil İşleme aracıdır. İçeriklerin öncesinde görülerek karar alınabilmesine yönelik yardımcı olabilmek amacıyla geliştirilmiştir.
 
-![uygulama](https://github.com/esmanp/gorengoz/blob/main/Ekran%20g%C3%B6r%C3%BCnt%C3%BCs%C3%BC.png?raw=true)
+![uygulama](https://github.com/esmanp/gorengoz/blob/main/Scn.png?raw=true)
 
 
 ## Problem Tanımı
