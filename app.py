@@ -76,7 +76,7 @@ def transcribe_large_audio(path):
             audio_listened = r.record(source)
             # Convert to text
             try:
-                text = r.recognize_google(audio_listened)
+                text = r.recognize_google(audio_listened,language='tr-TR')
             except sr.UnknownValueError as e:
                 print("Error:", str(e))
             else:
