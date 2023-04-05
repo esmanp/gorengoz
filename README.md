@@ -32,8 +32,11 @@ kısımlarına tıklamanız yeterli olacaktır.
 
 ## Katkılarımız
 
-Hugging Face Modeli
+### Hugging Face Modeli
+Oluşturulan veri modelini MIT lisansı ile uluslararası doğal dil platformu olan huggingface te paylaşarak Türkçe modellere yeni ve başarılı bir model eklenilmesi sağlanılmıştır. 
 
+[ennp/bert-turkish-text-classification-cased](https://huggingface.co/ennp/bert-turkish-text-classification-cased)
+![Model](https://github.com/esmanp/gorengoz/blob/main/huggingfacemodel.png?raw=true)
 
 
 
@@ -41,7 +44,7 @@ Hugging Face Modeli
 Site: https://gorengoz.streamlit.app
   
 
-## Bu web uygulamasını kendi bilgisayarınızda yeniden oluşturmak için aşağıdaki adımları takip edebilirsiniz: 
+##### Bu web uygulamasını kendi bilgisayarınızda yeniden oluşturmak için aşağıdaki adımları takip edebilirsiniz: 
 
 
 
