@@ -64,7 +64,7 @@ def transcribe_large_audio(path):
         audio_chunk.export(chunk_filename, format="wav")
         # Recognize chunk
         with sr.AudioFile(chunk_filename) as source:
-            audio_listened = r.record(source)
+            audio_listened = r.record(source,min_silence_len=700, silence_thresh=-16, keep_silence=700)
             # Convert to text
             try:
                 text = r.recognize_google(audio_listened,language="tr-tr")
